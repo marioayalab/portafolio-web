@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Caso de estudio del sistema de carga y encomiendas de AYBIZ Cargo Express, Huancayo: el problema, la solución, las pantallas y lo que falta.">
+    <link rel="icon" href="imagenes/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Caso AYBIZ | Portafolio de Mario Ayala</title>
+  </head>
+
+  <body>
+    <a href="#contenido-principal">Saltar al contenido principal</a>
+
+    <header>
+      <p>Caso de estudio</p>
+      <h1>Sistema de carga y encomiendas para AYBIZ Cargo Express</h1>
+      <p>
+        Cómo pasé los formatos de papel y los Excel de una empresa de transporte
+        a un sistema web, qué decisiones tomé y qué queda pendiente.
+      </p>
+
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="caso-aybiz.html" aria-current="page">Caso AYBIZ</a></li>
+          <li><a href="como-trabajo.html">Cómo trabajo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido-principal">
+      <article>
+        <h2>Ficha del proyecto</h2>
+        <dl>
+          <dt>Empresa</dt>
+          <dd>AYBIZ Cargo Express, transporte de carga y encomiendas. Huancayo, Perú.</dd>
+
+          <dt>Participación</dt>
+          <dd>Desarrollo individual: base de datos, pantallas y publicación.</dd>
+
+          <dt>Tecnologías</dt>
+          <dd>React, Vite, Tailwind CSS, Supabase (PostgreSQL), Recharts para los gráficos y Cloudflare Pages para publicarlo.</dd>
+
+          <dt>Periodo</dt>
+          <dd>Desde agosto de 2026.</dd>
+
+          <dt>Estado</dt>
+          <dd>Terminado y en pruebas con datos ficticios, antes del piloto con la operación real.</dd>
+        </dl>
+
+        <section>
+          <h2>Contexto</h2>
+          <p>
+            AYBIZ es la empresa de mi familia. Mueve encomiendas entre Huancayo,
+            Ayacucho y Lima, con agencias en la ruta y choferes que cobran en la
+            carretera, muchas veces sin señal. Conozco el negocio desde adentro,
+            no por una entrevista.
+          </p>
+          <p>
+            Antes del sistema, cada agencia cerraba su caja del día en un formato
+            de papel, el chofer liquidaba su viaje en otro formato, y la
+            administración pasaba todo a un Excel de ingresos y egresos. Cuadrar
+            cuánto había en caja y de quién era cada sol tomaba días.
+          </p>
+        </section>
+
+        <section>
+          <h2>El problema</h2>
+          <ul>
+            <li>La misma encomienda se anotaba tres veces: en la agencia, en la guía del chofer y en el Excel.</li>
+            <li>Nadie sabía en el momento cuánto dinero estaba en caja, cuánto iba en camino y cuánto faltaba rendir.</li>
+            <li>Los precios se cotizaban de memoria; dos agencias podían cobrar distinto por el mismo envío.</li>
+            <li>El cierre del mes dependía de una persona y de un archivo.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>La solución</h2>
+          <p>
+            Un sistema web, en castellano, con un módulo por cada parte del
+            trabajo. La regla que ordena todo es simple: <strong>una encomienda
+            no se admite si no hay un camión programado</strong>. Sin viaje no
+            hay carga, porque la encomienda no sabría cuándo sale ni quién la
+            lleva.
+          </p>
+
+          <figure>
+            <img src="imagenes/aybiz-despacho-escritorio.webp" alt="Módulo de Despacho de AYBIZ con el turno de caja abierto y un aviso en rojo: no hay viajes programados desde Huancayo, sin camión programado no se admite carga" width="1600" height="1000">
+            <figcaption>Despacho: el sistema no deja registrar carga si no hay un viaje programado.</figcaption>
+          </figure>
+
+          <h3>Módulos principales</h3>
+          <ul>
+            <li><strong>Despacho y entregas.</strong> Registro de la encomienda en ventanilla y entrega en destino.</li>
+            <li><strong>Viajes y camiones.</strong> Cada salida del camión, con su ruta, placa, kilómetros y carga asignada.</li>
+            <li><strong>Rendición del chofer.</strong> Lo que cobró y gastó en la carretera, cuadrado contra el viaje.</li>
+            <li><strong>Ventas, caja y cuentas.</strong> Caja por turno, cuentas por cobrar y bancos.</li>
+            <li><strong>Contabilidad y reportes.</strong> Cuánto se ganó en el mes y cuánta plata va a haber el mes que viene.</li>
+            <li><strong>Tarifas.</strong> Una escalera de precios por kilo y por kilómetro, la misma para todas las agencias.</li>
+            <li><strong>Clientes, personal, contratos y flota.</strong></li>
+          </ul>
+
+          <figure>
+            <img src="imagenes/aybiz-viajes-escritorio.webp" alt="Módulo de Viajes de AYBIZ con cinco viajes de Huancayo a Churcampa, cada uno con fecha, placa del camión, kilómetros, guías y monto" width="1600" height="1000">
+            <figcaption>Viajes: cada salida del camión con su placa, kilómetros y lo que se cobró.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="imagenes/aybiz-contabilidad-analisis-escritorio.webp" alt="Módulo de Contabilidad de AYBIZ, pestaña Análisis, con tarjetas de lo vendido, lo que costó, el resultado y el margen, y dos gráficos de los últimos doce meses" width="1600" height="1000">
+            <figcaption>Contabilidad: vendido contra costó y margen mes a mes, en gráficos de doce meses.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="imagenes/aybiz-tarifario-escritorio.webp" alt="Módulo de Precios y tarifas de AYBIZ con la escalera de precios: costo de atender el envío, precio mínimo y una tabla de tramos por kilo con el precio por kilómetro y lo que cuesta el kilo a Huancayo, Ayacucho y Lima" width="1600" height="2393">
+            <figcaption>Tarifas: la escalera de precios por kilo y kilómetro, con lo que cuesta el kilo a cada destino.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="imagenes/aybiz-flota-escritorio.webp" alt="Módulo de Flota de AYBIZ con cuatro camiones, su placa, modelo, capacidad de carga en toneladas y estado operativo" width="1600" height="1000">
+            <figcaption>Flota: los camiones, cuánto cargan y qué papeles tienen al día.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="imagenes/aybiz-clientes-escritorio.webp" alt="Módulo de Clientes de AYBIZ con cinco clientes, su documento, teléfono, categoría, movimiento, línea de crédito y deuda" width="1600" height="1000">
+            <figcaption>Clientes: quién debe, quién tiene crédito y quién puede ascender de categoría.</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Decisiones y por qué las tomé</h2>
+          <table>
+            <caption>Decisiones técnicas del sistema AYBIZ</caption>
+            <thead>
+              <tr>
+                <th scope="col">Decisión</th>
+                <th scope="col">Motivo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Las reglas viven en la base de datos, no en la pantalla</th>
+                <td>La pantalla anticipa el error, pero es PostgreSQL quien lo rechaza. Así una regla no se salta aunque alguien use otra pantalla.</td>
+              </tr>
+              <tr>
+                <th scope="row">Supabase como base de datos</th>
+                <td>Me da PostgreSQL, usuarios y permisos sin tener que administrar un servidor. La base son más de cien scripts SQL numerados que se corren en orden.</td>
+              </tr>
+              <tr>
+                <th scope="row">Entrar con DNI en vez de correo</th>
+                <td>Un chofer siempre tiene DNI; correo, a veces, y no se lo acuerda. El DNI está en su fotocheck.</td>
+              </tr>
+              <tr>
+                <th scope="row">Nada se borra: se retira, con motivo</th>
+                <td>Una guía cobrada no se puede tocar. Si hay un error, se cierra esa versión y se abre otra. Queda el rastro.</td>
+              </tr>
+              <tr>
+                <th scope="row">Todo en castellano, hasta el código</th>
+                <td>Quien mantenga esto va a ser alguien de Huancayo. Nombres de tablas, funciones y mensajes en el idioma del negocio.</td>
+              </tr>
+              <tr>
+                <th scope="row">Pruebas con datos ficticios antes del piloto</th>
+                <td>Encontrar los errores sin arriesgar la caja real. Los datos que se ven en las capturas son de prueba.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Desde el celular</h2>
+          <p>
+            El chofer y el agente de ventanilla no trabajan en una computadora.
+            Las pantallas se acomodan al celular: el menú se guarda en un botón y
+            las tarjetas se apilan una debajo de otra.
+          </p>
+
+          <figure>
+            <img src="imagenes/aybiz-inicio-movil.webp" alt="Pantalla de inicio de AYBIZ vista en un celular: saludo, alerta de caja y tarjetas de hoy, esta semana y este mes apiladas" width="780" height="2410">
+            <figcaption>Inicio del sistema en un celular.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="imagenes/aybiz-viajes-movil.webp" alt="Módulo de Viajes de AYBIZ visto en un celular, con los filtros y las tarjetas de viaje apiladas" width="780" height="2436">
+            <figcaption>Viajes en un celular: los mismos datos, una tarjeta debajo de otra.</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Lo que falta</h2>
+          <p>
+            Lo escribo acá para no olvidarlo, no como excusa. Un sistema que no
+            dice lo que le falta promete más de lo que hace.
+          </p>
+          <ul>
+            <li>Permisos por rol: hoy, quien entra ve todos los módulos.</li>
+            <li>La depreciación de los camiones no está en ningún renglón, así que el margen sale más alto de lo que es.</li>
+            <li>Un pago por Yape se cuenta como cobrado sin confirmar que el dinero entró.</li>
+            <li>Falta la conciliación con el banco.</li>
+            <li>En el celular, la barra de pestañas de Contabilidad se superpone y no se puede tocar. Lo encontré al preparar estas capturas.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Qué aprendí</h2>
+          <p>
+            Que el trabajo grande no fue programar, sino entender los formatos de
+            papel: el cierre de caja de la agencia y la liquidación del chofer son
+            la fuente de todas las reglas del sistema. Y que una regla escrita en
+            la base de datos vale más que diez avisos en pantalla.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="proyectos.html">Volver a proyectos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <p><small>&copy; 2026 Mario Ayala. Portafolio académico.</small></p>
+    </footer>
+  </body>
+</html>

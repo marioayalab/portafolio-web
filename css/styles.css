@@ -1,0 +1,91 @@
+body {
+  background-color: #f4f6f8;
+  color: #1f2934;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 24px;
+}
+
+h1 {
+  color: #1a3d6d;
+  font-size: 36px;
+}
+
+h2 {
+  color: #1a3d6d;
+  font-size: 26px;
+}
+
+h3 {
+  color: #2b4a6f;
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  color: #0b5fa5;
+}
+
+button {
+  background-color: #1a3d6d;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+th,
+td {
+  border: 1px solid #c3ccd6;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #e4e9ef;
+}
+
+/* caption = título de la tabla. */
+caption {
+  font-weight: bold;
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+/* Campos del formulario. */
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #98a4b3;
+}
+
+/* footer = pie de página. */
+footer {
+  border-top: 1px solid #c3ccd6;
+  margin-top: 32px;
+  padding-top: 16px;
+}
+
+/* Las imágenes no se salen de su caja. */
+img {
+  max-width: 100%;
+  height: auto;
+}

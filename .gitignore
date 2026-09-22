@@ -1,0 +1,15 @@
+# Credenciales y secretos locales
+github-recovery-codes.txt
+.env
+.env.*
+
+# Archivos del sistema y editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Documentacion interna del proyecto
+CONTENIDO_SITIO.md
+CONTEXTO_PROYECTO.md
+informe.md
+imagenes/LEEME.md

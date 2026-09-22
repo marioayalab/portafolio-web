@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contacto de Mario Ayala, desarrollador de sistemas en Huancayo: correo, GitHub y formulario.">
+    <link rel="icon" href="imagenes/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contacto | Portafolio de Mario Ayala</title>
+  </head>
+
+  <body>
+    <a href="#contenido-principal">Saltar al contenido principal</a>
+
+    <header>
+      <p>Portafolio profesional</p>
+      <h1>Contacto</h1>
+      <p>
+        Gracias por llegar hasta acá. Si buscas un practicante o necesitas un
+        sistema para tu negocio, escríbeme.
+      </p>
+
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="caso-aybiz.html">Caso AYBIZ</a></li>
+          <li><a href="como-trabajo.html">Cómo trabajo</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido-principal">
+      <section>
+        <h2>Datos de contacto</h2>
+        <p>Respondo por correo en el transcurso del día.</p>
+
+        <address>
+          <ul>
+            <li>Correo: <a href="mailto:iv70252528@idat.pe">iv70252528@idat.pe</a></li>
+            <li>GitHub: <a href="https://github.com/marioayalab" target="_blank" rel="noopener">github.com/marioayalab</a></li>
+            <li>Huancayo, Perú</li>
+          </ul>
+        </address>
+      </section>
+
+      <section>
+        <h2>Formulario de contacto</h2>
+
+        <!-- Formulario sin action: el sitio es estático y todavía no hay servicio que reciba los mensajes -->
+        <form>
+          <fieldset>
+            <legend>Tus datos</legend>
+
+            <p>
+              <label for="nombre">Nombre completo</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+            </p>
+
+            <p>
+              <label for="correo">Correo electrónico</label>
+              <input id="correo" name="correo" type="email" autocomplete="email" required>
+            </p>
+
+            <p>
+              <label for="telefono">Teléfono (9 dígitos)</label>
+              <input id="telefono" name="telefono" type="tel" pattern="[0-9]{9}" maxlength="9" inputmode="numeric" autocomplete="tel" required>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Tu consulta</legend>
+
+            <p>
+              <label for="motivo">Motivo del mensaje</label>
+              <select id="motivo" name="motivo" required>
+                <option value="" selected disabled>Selecciona un motivo</option>
+                <option value="practicas">Prácticas o empleo junior</option>
+                <option value="sistema">Encargo de un sistema</option>
+                <option value="colaboracion">Colaboración en un proyecto</option>
+                <option value="otro">Otro</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+            </p>
+          </fieldset>
+
+          <p>
+            <button type="submit">Enviar</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html">Volver al inicio</a></li>
+          <li><a href="proyectos.html">Ver proyectos</a></li>
+        </ul>
+      </nav>
+      <p><small>&copy; 2026 Mario Ayala. Portafolio académico.</small></p>
+    </footer>
+  </body>
+</html>

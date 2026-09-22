@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sistemas desarrollados por Mario Ayala: el sistema de carga y encomiendas de AYBIZ Cargo Express y el punto de venta de Matthew Store.">
+    <link rel="icon" href="imagenes/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Proyectos | Portafolio de Mario Ayala</title>
+  </head>
+
+  <body>
+    <a href="#contenido-principal">Saltar al contenido principal</a>
+
+    <header>
+      <p>Portafolio profesional</p>
+      <h1>Proyectos</h1>
+      <p>
+        Los sistemas que he construido, con lo que hice en cada uno, la
+        tecnología que usé y en qué estado están hoy.
+      </p>
+
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html" aria-current="page">Proyectos</a></li>
+          <li><a href="caso-aybiz.html">Caso AYBIZ</a></li>
+          <li><a href="como-trabajo.html">Cómo trabajo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido-principal">
+      <section>
+        <h2>Resumen de proyectos</h2>
+
+        <!-- Tabla resumen: una fila por sistema -->
+        <table>
+          <caption>Sistemas desarrollados hasta setiembre de 2026</caption>
+          <thead>
+            <tr>
+              <th scope="col">Proyecto</th>
+              <th scope="col">Negocio</th>
+              <th scope="col">Participación</th>
+              <th scope="col">Tecnologías</th>
+              <th scope="col">Periodo</th>
+              <th scope="col">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">AYBIZ Cargo Express</th>
+              <td>Transporte de carga y encomiendas, Huancayo</td>
+              <td>Desarrollo individual</td>
+              <td>React, Vite, Tailwind CSS, Supabase, Cloudflare Pages</td>
+              <td>Desde agosto de 2026</td>
+              <td>Terminado, en pruebas antes del piloto</td>
+            </tr>
+            <tr>
+              <th scope="row">Matthew Store</th>
+              <td>Venta de zapatillas</td>
+              <td>Desarrollo individual</td>
+              <td>React, JavaScript, Supabase, Netlify</td>
+              <td>Desde enero de 2026</td>
+              <td>En desarrollo</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Sistema de carga y encomiendas para AYBIZ Cargo Express</h2>
+        <p>
+          AYBIZ es la empresa de transporte de mi familia. Lleva encomiendas entre
+          Huancayo, Ayacucho y Lima, con agencias en la ruta. Antes del sistema,
+          cada agencia cerraba su caja en un formato de papel, los choferes
+          liquidaban el viaje en otro, y todo terminaba en un Excel que alguien
+          tenía que cuadrar a mano.
+        </p>
+        <p>
+          El sistema reemplaza esos formatos. Una encomienda se registra en
+          Despacho, se asigna sola al viaje de su ruta, el chofer rinde el viaje
+          desde su celular y Contabilidad muestra cuánto se ganó en el mes y
+          cuánta plata va a haber el mes que viene.
+        </p>
+
+        <h3>Módulos</h3>
+        <ul>
+          <li>Despacho, entregas y almacén de encomiendas.</li>
+          <li>Viajes, camiones en ruta y rendición del chofer.</li>
+          <li>Ventas, caja por turno, cuentas por cobrar y bancos.</li>
+          <li>Contabilidad con reportes y gráficos de doce meses.</li>
+          <li>Clientes, personal, contratos, flota y tarifas por kilómetro.</li>
+        </ul>
+
+        <p><a href="caso-aybiz.html">Leer el caso de estudio de AYBIZ</a></p>
+      </section>
+
+      <section>
+        <h2>Sistema POS y catálogo para Matthew Store</h2>
+        <p>
+          Matthew Store es una tienda de zapatillas que registraba ventas, stock y
+          ganancias en hojas de cálculo. Desarrollé un punto de venta conectado
+          con un catálogo web; los dos comparten la misma base de datos en
+          Supabase, así que el stock que ve el cliente es el mismo que ve la
+          tienda.
+        </p>
+        <ul>
+          <li>Registro de ventas, inventario y devoluciones, con alertas de stock bajo.</li>
+          <li>Catálogo por tallas y marcas, con filtros.</li>
+          <li>Consulta de datos por RUC y DNI y generación de tickets, boletas y facturas.</li>
+        </ul>
+        <p>
+          Los comprobantes se generan dentro del sistema, pero todavía no se
+          envían ni se validan ante SUNAT. Este proyecto sigue en desarrollo; por
+          eso el caso de estudio del portafolio es el de AYBIZ, que ya está
+          terminado.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html">Volver al inicio</a></li>
+          <li><a href="caso-aybiz.html">Caso de estudio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <p><small>&copy; 2026 Mario Ayala. Portafolio académico.</small></p>
+    </footer>
+  </body>
+</html>
